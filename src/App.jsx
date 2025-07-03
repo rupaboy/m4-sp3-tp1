@@ -1,12 +1,17 @@
 import Menu from "./component/Menu"
 import Header from "./component/Header"
 import { useMenu } from "./hooks/useMenu"
-import Mshirt from "./component/particle/builder/Mshirt"
-import Fshirt from "./component/particle/builder/Fshirt"
+import { useState } from "react"
+import TShirts from './component/particle/builder/TShirts'
+import tShirts from './utils/tShirts.json'
 
 function App() {
 
   const { isMenuOpen } = useMenu()
+  const [isTShirtMale, setIsTShirtMale] = useState(false)
+  const [tShirtColor, setTShirtColor] = useState(6)
+  const [tShirtSize, setTShirtSize] = useState(0)
+
 
   return (
 
@@ -20,9 +25,21 @@ function App() {
       sm:pl-30 sm:pt-0
       '>
 
-        { isMenuOpen && <Menu />}
+        {isMenuOpen && <Menu />}
 
-      <Fshirt></Fshirt>
+        {!isMenuOpen &&
+
+          <div>
+
+            <TShirts
+              isTShirtMale={isTShirtMale}
+              tShirtColor={tShirts.color[tShirtColor].hex}
+              className='relative w-full grid justify-around' />
+
+          </div>
+
+        }
+
       </main>
     </>
   )
