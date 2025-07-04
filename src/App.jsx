@@ -9,9 +9,8 @@ function App() {
 
   const { isMenuOpen } = useMenu()
   const [isTShirtMale, setIsTShirtMale] = useState(false)
-  const [tShirtColor, setTShirtColor] = useState(6)
+  const [tShirtColor, setTShirtColor] = useState(2)
   const [tShirtSize, setTShirtSize] = useState(0)
-
 
   return (
 

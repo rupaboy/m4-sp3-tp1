@@ -30,23 +30,54 @@
       "name": "XL",
       "priceFactor": 1.6
     }
-  ],"color": [
-  { "id": 20, "name": "Blanco", "hex": "#F8F8F6" },
-  { "id": 22, "name": "Gris", "hex": "#A3A3A3" },
-  { "id": 23, "name": "Negro", "hex": "#1C1C1C" },
-  { "id": 31, "name": "Beige", "hex": "#D8CAB8" },
-  { "id": 21, "name": "Arena", "hex": "#D6BA99" },
-  { "id": 32, "name": "Marrón", "hex": "#7A5230" },
-  { "id": 25, "name": "Azul Marino", "hex": "#2F3E5C" },
-  { "id": 30, "name": "Turquesa Apagado", "hex": "#4C7C7A" },
-  { "id": 33, "name": "Verde Oliva", "hex": "#6A7753" },
-  { "id": 29, "name": "Mostaza", "hex": "#C9A246" },
-  { "id": 24, "name": "Rojo Tinto", "hex": "#8C3B3B" },
-  { "id": 28, "name": "Bordó", "hex": "#5C2A33" },
-  { "id": 26, "name": "Rosa Viejo", "hex": "#C48C94" },
-  { "id": 27, "name": "Violeta Profundo", "hex": "#5B4E75" }
-]
-,
+  ],
+  "color": [
+    {
+      "id": 20,
+      "name": "Blanco",
+      "hex": "#FDFDFF"
+    },
+    {
+      "id": 21,
+      "name": "Gris",
+      "hex": "#7E7E7E"
+    },
+    {
+      "id": 22,
+      "name": "Negro",
+      "hex": "#444444"
+    },
+    {
+      "id": 23,
+      "name": "Beige",
+      "hex": "#B59F84"
+    },
+    {
+      "id": 24,
+      "name": "Arena",
+      "hex": "#D5B88E"
+    },
+    {
+      "id": 25,
+      "name": "Marrón",
+      "hex": "#6F5E4F"
+    },
+    {
+      "id": 26,
+      "name": "Azul Marino",
+      "hex": "#4F5F88"
+    },
+    {
+      "id": 27,
+      "name": "Verde Oliva",
+      "hex": "#5A6548"
+    },
+    {
+      "id": 28,
+      "name": "Rojo Pasión",
+      "hex": "#CC1B22"
+    }
+  ],
   "stamp": [
     {
       "id": 50,
