@@ -39,8 +39,7 @@ export const ThemeProvider = ({ children }) => {
             <div //Todos los elementos hijos podrán tener className 'dark'
             id='rootElement'
             className={`${isDark ? 'dark' : ''}
-            bg-zinc-400 dark:bg-zinc-900
-            h-screen min-w-82`}>
+            bg-zinc-400 dark:bg-zinc-900 min-w-82`}>
 
                 {children}
 

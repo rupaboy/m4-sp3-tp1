@@ -8,9 +8,7 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
     {!isTShirtMale &&
       <main>
 
-
-
-        <svg className='absolute top-0'
+        <svg className='absolute'
           xmlns="http://www.w3.org/2000/svg"
           width={382.191}
           height={352.223}
@@ -30,7 +28,7 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
 
         {/* FEMALE SHIRT ORNAMENTS */}
 
-        <svg className='absolute top-0'
+        <svg className='absolute'
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           width={382.191}
@@ -162,7 +160,7 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
       <main>
         {/* MALE SHIRT CROP (colorShirt depositary) */}
 
-        <svg className='absolute top-0'
+        <svg className='absolute'
           xmlns="http://www.w3.org/2000/svg"
           width={391.087}
           height={352.292}
@@ -183,7 +181,7 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
 
         {/* MALE SHIRT ORNAMENTS */}
 
-        <svg className='absolute top-0'
+        <svg className='absolute'
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           width={391.087}
