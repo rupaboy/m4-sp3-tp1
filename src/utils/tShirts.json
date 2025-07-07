@@ -82,52 +82,52 @@
     {
       "id": 50,
       "name": "The Pixies",
-      "url": "src/assets/50.svg"
+      "url": "/assets/50.svg"
     },
     {
       "id": 51,
       "name": "The Who",
-      "url": "src/assets/51.svg"
+      "url": "/assets/51.svg"
     },
     {
       "id": 52,
       "name": "Metric",
-      "url": "src/assets/52.svg"
+      "url": "/assets/52.svg"
     },
     {
       "id": 53,
       "name": "Blur",
-      "url": "src/assets/53.svg"
+      "url": "/assets/53.svg"
     },
     {
       "id": 54,
       "name": "Talking Heads",
-      "url": "src/assets/54.svg"
+      "url": "/assets/54.svg"
     },
     {
       "id": 55,
       "name": "Peligrosos Gorriones",
-      "url": "src/assets/55.svg"
+      "url": "/assets/55.svg"
     },
     {
       "id": 56,
       "name": "Pink Floyd",
-      "url": "src/assets/56.svg"
+      "url": "/assets/56.svg"
     },
     {
       "id": 57,
       "name": "The Prodigy",
-      "url": "src/assets/57.svg"
+      "url": "/assets/57.svg"
     },
     {
       "id": 58,
       "name": "QOTSA",
-      "url": "src/assets/58.svg"
+      "url": "/assets/58.svg"
     },
     {
       "id": 59,
       "name": "Rammstein",
-      "url": "src/assets/59.svg"
+      "url": "/assets/59.svg"
     }
   ]
 }
