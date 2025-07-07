@@ -1,30 +1,39 @@
 import Menu from "./component/Menu"
 import Header from "./component/Header"
 import { useMenu } from "./hooks/useMenu"
+import { useCart } from './hooks/useCart'
 import Builder from "./component/Builder"
+import Cart from './component/Cart'
 
 function App() {
 
-  const { isMenuOpen } = useMenu()
+  const { isMenuOpen, toggleMenu } = useMenu()
+  const { isCartOpen, toggleCart } = useCart()
 
 
   return (
 
-    <div className="w-full grid itemx-center justify-center">
+    <div className="select-none">
       <Header />
 
-      <main className='
+      <main className={`
+      ${isMenuOpen ? '' : 'sm:pt-10 pt-28'}
       bg-zinc-400
       dark:bg-zinc-900
-      pt-17 w-full
-      sm:pl-30 sm:pt-0
-      '>
+      grid justify-center
+      w-screen sm:pl-30
+      ${isCartOpen ? 'h-screen overflow-scroll': 'h-screen items-center' }
+      `}>
 
+        {isMenuOpen && !isCartOpen && <Menu />}
         {isMenuOpen && <Menu />}
 
-      { !isMenuOpen && <Builder/> }
+       <Builder isMenuOpen={isMenuOpen} isCartOpen={isCartOpen} />
+
+        {isCartOpen && <Cart />}        
 
       </main>
+
     </div>
   )
 }

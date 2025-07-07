@@ -1,17 +1,46 @@
 
-const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
+const TShirts = ({
+  isTShirtMale = false,
+  isTShirtStampInverted = false,
+  tShirtSize = 1,
+  tShirtColor = '#FFF',
+  tShirtStamp = 'src/assets/50.svg' }) => (
 
-  <>
+
+  <div className={`
+  ${ tShirtSize === 0
+    ? 'scale-90'
+    : tShirtSize === 1
+    ? 'scale-100'
+    : tShirtSize === 2
+    ? 'scale-110'
+    : 'scale-120'
+  }
+  relative flex flex-col items-start w-100 aspect-[1/1] mx-auto mb-auto`}>
+
+    <main //STAMP!!!
+      className={`
+     ${isTShirtStampInverted ? 'opacity-80': 'invert-100'}
+    absolute top-0 left-1/2 -translate-x-1/2 z-20 w-full flex justify-center
+    `}>
+      <img
+        className={`
+      ${isTShirtMale ? 'top-26' : 'top-25'}
+      relative object-contain max-w-28 max-h-14 w-full h-full`}
+        src={tShirtStamp}
+        alt=""
+      />
+    </main>
+
 
     {/* FEMALE SHIRT CROP (tShirtColor depositary) */}
 
     {!isTShirtMale &&
       <main>
 
-        <svg className='absolute'
+        <svg className='absolute scale-80'
           xmlns="http://www.w3.org/2000/svg"
-          width={382.191}
-          height={352.223}
+          preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 101.121 93.192"
         >
           <path
@@ -28,11 +57,10 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
 
         {/* FEMALE SHIRT ORNAMENTS */}
 
-        <svg className='absolute'
+        <svg className='absolute scale-80'
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          width={382.191}
-          height={352.223}
+          preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 101.121 93.192"
         >
           <defs>
@@ -99,7 +127,7 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
               fill: "url(#b)",
               fillOpacity: 1,
               stroke: '#fff',
-              strokeWidth:.1,
+              strokeWidth: .1,
               strokeOpacity: .1,
               strokeLinecap: "round",
               strokeLinejoin: "round",
@@ -160,10 +188,9 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
       <main>
         {/* MALE SHIRT CROP (colorShirt depositary) */}
 
-        <svg className='absolute'
+        <svg className='absolute scale-80'
           xmlns="http://www.w3.org/2000/svg"
-          width={391.087}
-          height={352.292}
+          preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 103.475 93.211"
         >
           <path
@@ -181,14 +208,13 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
 
         {/* MALE SHIRT ORNAMENTS */}
 
-        <svg className='absolute'
+        <svg className='absolute scale-80'
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          width={391.087}
-          height={352.292}
+          preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 103.475 93.211"
         >
-                    <defs>
+          <defs>
             <linearGradient id="a">
               <stop
                 offset={0}
@@ -252,7 +278,7 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
               fill: "url(#b)",
               fillOpacity: 1,
               stroke: '#fff',
-              strokeWidth:.1,
+              strokeWidth: .1,
               strokeOpacity: .1,
               strokeLinecap: "round",
               strokeLinejoin: "round",
@@ -308,7 +334,7 @@ const TShirts = ({ isTShirtMale = false, tShirtColor = '#FFF' }) => (
 
     }
 
-  </>
+  </div>
 
 
 )

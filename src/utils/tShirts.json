@@ -81,64 +81,53 @@
   "stamp": [
     {
       "id": 50,
-      "url": ""
+      "name": "The Pixies",
+      "url": "src/assets/50.svg"
     },
     {
       "id": 51,
-      "url": ""
+      "name": "The Who",
+      "url": "src/assets/51.svg"
     },
     {
       "id": 52,
-      "url": ""
+      "name": "Metric",
+      "url": "src/assets/52.svg"
     },
     {
       "id": 53,
-      "url": ""
+      "name": "Blur",
+      "url": "src/assets/53.svg"
     },
     {
       "id": 54,
-      "url": ""
+      "name": "Talking Heads",
+      "url": "src/assets/54.svg"
     },
     {
       "id": 55,
-      "url": ""
+      "name": "Peligrosos Gorriones",
+      "url": "src/assets/55.svg"
     },
     {
       "id": 56,
-      "url": ""
+      "name": "Pink Floyd",
+      "url": "src/assets/56.svg"
     },
     {
       "id": 57,
-      "url": ""
+      "name": "The Prodigy",
+      "url": "src/assets/57.svg"
     },
     {
       "id": 58,
-      "url": ""
+      "name": "QOTSA",
+      "url": "src/assets/58.svg"
     },
     {
       "id": 59,
-      "url": ""
-    },
-    {
-      "id": 50,
-      "url": ""
-    },
-    {
-      "id": 61,
-      "url": ""
-    },
-    {
-      "id": 62,
-      "url": ""
-    },
-    {
-      "id": 63,
-      "url": ""
-    },
-    {
-      "id": 64,
-      "url": ""
+      "name": "Rammstein",
+      "url": "src/assets/59.svg"
     }
-  ],
-  "precioBase": 10000
+  ]
 }

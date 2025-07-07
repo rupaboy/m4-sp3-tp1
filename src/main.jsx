@@ -4,17 +4,19 @@ import './index.css'
 import App from './App.jsx'
 import { ThemeProvider } from './context/ThemeContext'
 import { MenuProvider } from './context/MenuContext.jsx'
+import { CartProvider } from './context/CartContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <CartProvider>
+      <MenuProvider>
+        <ThemeProvider>
 
-    <MenuProvider>
-      <ThemeProvider>
+          <App />
 
-        <App />
-        
-      </ThemeProvider>
-    </MenuProvider>
+        </ThemeProvider>
+      </MenuProvider>
+    </CartProvider>
 
   </StrictMode>,
 )

@@ -1,14 +1,26 @@
 import { useTheme } from "../../hooks/useTheme"
+import { useMenu } from '../../hooks/useMenu'
 
-const Themes = () => {
+const ThemesButton = () => {
 
     const { toggleTheme, isDark } = useTheme() //Consume función palanca de cambio de tema
+
+    const { toggleMenu } = useMenu()
 
     return (
         <>
             <button
-            onClick={toggleTheme}
+            onClick={ () => {
+                toggleTheme();
+                toggleMenu();
+            }}
             className="
+            
+            cursor-pointer
+        hover:dark:bg-orange-950 hover:bg-zinc-100
+        
+         font-black
+            
             mt-2 px-2 h-8 w-40 leading-7 rounded border
             bg-zinc-300 dark:bg-zinc-950
             border-amber-800 dark:border-orange-300
@@ -21,4 +33,4 @@ const Themes = () => {
     )
 }
 
-export default Themes
+export default ThemesButton
